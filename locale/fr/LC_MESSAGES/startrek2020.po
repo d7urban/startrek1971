@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-01-04 14:15+0100\n"
-"PO-Revision-Date: 2021-01-04 16:03+0100\n"
+"PO-Revision-Date: 2021-01-04 19:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -602,7 +602,7 @@ msgstr "             Nombre: [{number}]\n"
 
 #: Sector.py:48
 msgid "           Hazzards: [{hazzards}]\n"
-msgstr "           Hazzards: [{hazzards}]\\n\n"
+msgstr "           Hazzards: [{hazzards}]\n"
 
 #: Sector.py:49
 msgid "           Stardate: {star_date}\n"
@@ -610,7 +610,7 @@ msgstr "           Date stellaire: {star_date}\n"
 
 #: Sector.py:50
 msgid "          Condition: {condition}\n"
-msgstr "          Condition: {condition}\\n\n"
+msgstr "          Condition: {condition}\n"
 
 #: Sector.py:51
 msgid "             Energy: {energy}\n"
