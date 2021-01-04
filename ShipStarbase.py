@@ -1,5 +1,6 @@
 from AbsShip import AbsShip
 
+
 class ShipStarbase(AbsShip):
 
     def __init__(self):

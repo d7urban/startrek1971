@@ -6,13 +6,18 @@ from Difficulity import Probabilities
 import Glyphs
 from Quips import Quips
 
+import gettext
+
+# _ = gettext.gettext
+
+
 class ShipEnterprise(AbsShip):
 
     def __init__(self):
         super().__init__()
         self.energy = 0
         self.docked = False
-        self.condition = "GREEN"
+        self.condition = _("GREEN")
         self.navigation_damage = 0
         self.short_range_scan_damage = 0
         self.long_range_scan_damage = 0
@@ -66,43 +71,43 @@ class ShipEnterprise(AbsShip):
         if self.navigation_damage > 0:
             self.navigation_damage -= 1
             if self.navigation_damage == 0:
-                game.display("Warp engines have been repaired.")
+                game.display(_("Warp engines have been repaired."))
             game.display()
             return True
         if self.short_range_scan_damage > 0:
             self.short_range_scan_damage -= 1
             if self.short_range_scan_damage == 0:
-                game.display("Short range scanner has been repaired.")
+                game.display(_("Short range scanner has been repaired."))
             game.display()
             return True
         if self.long_range_scan_damage > 0:
             self.long_range_scan_damage -= 1
             if self.long_range_scan_damage == 0:
-                game.display("Long range scanner has been repaired.")
+                game.display(_("Long range scanner has been repaired."))
             game.display()
             return True
         if self.shield_control_damage > 0:
             self.shield_control_damage -= 1
             if self.shield_control_damage == 0:
-                game.display("Shield controls have been repaired.")
+                game.display(_("Shield controls have been repaired."))
             game.display()
             return True
         if self.computer_damage > 0:
             self.computer_damage -= 1
             if self.computer_damage == 0:
-                game.display("The main computer has been repaired.")
+                game.display(_("The main computer has been repaired."))
             game.display()
             return True
         if self.photon_damage > 0:
             self.photon_damage -= 1
             if self.photon_damage == 0:
-                game.display("Photon torpedo controls have been repaired.")
+                game.display(_("Photon torpedo controls have been repaired."))
             game.display()
             return True
         if self.phaser_damage > 0:
             self.phaser_damage -= 1
             if self.phaser_damage == 0:
-                game.display("Phasers have been repaired.")
+                game.display(_("Phasers have been repaired."))
             game.display()
             return True
         return False
@@ -138,7 +143,7 @@ class ShipEnterprise(AbsShip):
             lines.append(f"{Glyphs.STAR}: {quad.area_stars:>03}")
         dots = '     +' + ('-' * 35) + '+'
         game.display(dots)
-        game.display('     |          LONG RANGE SCAN          |')
+        game.display(_('     |          LONG RANGE SCAN          |'))
         game.display(dots)
         for ss in range(0,(len(lines)-1),12):
             for offs in range(4):

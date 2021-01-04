@@ -1,4 +1,11 @@
-﻿LOGO_TREKER = r"""
+﻿import gettext
+
+# _ = gettext.gettext
+
+fr = gettext.translation('startrek2020', localedir='locale', languages=['fr'])
+fr.install()
+
+LOGO_TREKER = r"""
                ______ _______ ______ ______    _______ ______  ______ __  __ 
               / __  //__  __// __  // __  /   /__  __// __  / / ____// / / /
              / / /_/   / /  / /_/ // /_/ /      / /  / /_/ / / /__  / // /
@@ -98,16 +105,16 @@ AREA_NAMES = [
     ]
 
 HELM_CMDS = [
-    "--- Commands -----------------",
-    "nav = Warp Speed      srs = Short Range Scan  tor = Photon Torpedos",
-    "sub = Sublight Speed  lrs = Long Range Scan   pha = Phasers",
-    "qui = Quit            com = Access Computer   she = Shields",
+    _("--- Commands -----------------"),
+    _("nav = Warp Speed      srs = Short Range Scan  tor = Photon Torpedos"),
+    _("sub = Sublight Speed  lrs = Long Range Scan   pha = Phasers"),
+    _("qui = Quit            com = Access Computer   she = Shields"),
     ]
 
 CPU_CMDS = [
-    "--- Main Computer --------------",
-    "rec = Cumulative Galatic Record",
-    "sta = Status Report",
-    "tor = Photon Torpedo Targets",
-    "bas = Starbase Locations",
+    _("--- Main Computer --------------"),
+    _("rec = Cumulative Galatic Record"),
+    _("sta = Status Report"),
+    _("tor = Photon Torpedo Targets"),
+    _("bas = Starbase Locations"),
     ]

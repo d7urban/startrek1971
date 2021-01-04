@@ -1,6 +1,11 @@
 import random
 from AbsShip import AbsShip
 
+import gettext
+
+# _ = gettext.gettext
+
+
 class ShipKlingon(AbsShip):
 
     def __init__(self):
@@ -29,7 +34,7 @@ class ShipKlingon(AbsShip):
         if len(kships) > 0:
             for ship in kships:
                 if game.enterprise.docked:
-                    game.display("Enterprise hit by ship at sector [{0},{1}]. No damage due to starbase shields.".format(
+                    game.display(_("Enterprise hit by ship at sector [{0},{1}]. No damage due to starbase shields.").format(
                         ship.xpos + 1, ship.ypos + 1
                     ))
                 else:
@@ -41,7 +46,7 @@ class ShipKlingon(AbsShip):
                     if game.enterprise.shield_level < 0:
                         game.enterprise.shield_level = 0
                         game.destroyed = True
-                    game.display("Enterprise hit by ship at sector [{0},{1}]. Shields dropped to {2}.".format(
+                    game.display(_("Enterprise hit by ship at sector [{0},{1}]. Shields dropped to {2}.").format(
                         ship.xpos + 1, ship.ypos + 1, game.enterprise.shield_level
                     ))
                     if game.enterprise.shield_level == 0:

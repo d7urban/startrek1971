@@ -1,0 +1,753 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-01-04 14:15+0100\n"
+"PO-Revision-Date: 2021-01-04 16:03+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: Calculators.py:49 Calculators.py:93
+msgid "Invalid course."
+msgstr "Parcours invalide."
+
+#: Calculators.py:58
+msgid "Insufficient energy move to that location."
+msgstr "Pas assez d’énergie pour aller là-bas."
+
+#: Calculators.py:63
+msgid "Sub-light engines engaged."
+msgstr "Moteurs conventionnels démarrés."
+
+#: Calculators.py:74 Calculators.py:121
+msgid "Lowering shields as part of docking sequence..."
+msgstr "Abaissement des boucliers dans le cadre de la séquence d’amarrage..."
+
+#: Calculators.py:75 Calculators.py:122
+msgid "Enterprise successfully docked with starbase."
+msgstr "L’Enterprise s’est correctement amarré à la base stellaire."
+
+#: Calculators.py:88
+msgid "Warp engines damaged. Maximum warp factor: {max}"
+msgstr ""
+"Moteurs de distorsion endommagés. Facteur de distorsion maximal : {max}"
+
+#: Calculators.py:105
+msgid "Insufficient energy to travel at that speed."
+msgstr "Pas assez d’énergie pour voyager à cette vitesse."
+
+#: Calculators.py:109
+msgid "Warp engines engaged."
+msgstr "Moteurs à distorsion démarrés."
+
+#: Calculators.py:138
+msgid "Starbases:"
+msgstr "Bases stellaires:"
+
+#: Calculators.py:141
+msgid "\tSector #{number} at [{xpos},{ypos}]."
+msgstr "\tSecteur #{number} aux coordonnées [{xpos},{ypos}]."
+
+#: Calculators.py:143
+msgid "There are no Starbases."
+msgstr "Il n'y a pas de bases stellaire."
+
+#: Calculators.py:152
+msgid "There are no enemies in this sector."
+msgstr "Il n'y a pas d'ennemies dans ce secteur."
+
+#: Calculators.py:155
+msgid "Enemies:"
+msgstr "Enemies:"
+
+#: Calculators.py:157
+msgid "\tKlingon [{xpos},{ypos}]."
+msgstr "\tKlingon [{xpos},{ypos}]."
+
+#: Console.py:32
+msgid "Location (alpha,num)"
+msgstr "Coordonnées (alpha,num)"
+
+#: Console.py:43
+msgid "Helm: sector 1-64, speed 1.0-9.0?"
+msgstr "Barre: secteur 1-64, vitesse 1.0-9.0 ?"
+
+#: Console.py:47
+msgid "Helm: a-h, 1-8?"
+msgstr "Barre: a-h, 1-8 ?"
+
+#: Console.py:54
+msgid "Testing!"
+msgstr "Test !"
+
+#: Console.py:55
+msgid "Testing, too!"
+msgstr "Test aussi !"
+
+#: Console.py:56
+msgid " .......... too!"
+msgstr "……… aussiiiii !"
+
+#: Console.py:56
+msgid "Testing"
+msgstr "Test"
+
+#: Controls.py:28
+msgid "Enter computer command: "
+msgstr "Saisir une commande: "
+
+#: Controls.py:39
+msgid "Invalid computer command."
+msgstr "Commande invalide."
+
+#: Controls.py:52 Controls.py:134
+msgid "There are no Klingon ships in this sector."
+msgstr "Il n'y a pas de vaisseaux Klingon  dans ce secteur."
+
+#: Controls.py:55
+msgid "Phasers locked on target."
+msgstr "Phasers verrouillés sur la cible."
+
+#: Controls.py:56
+msgid "Enter phaser energy (1--{0}): "
+msgstr "Saisir l'énergie du phaser (1--{0}): "
+
+#: Controls.py:58
+msgid "Invalid energy level."
+msgstr "Niveau d'énergie invalide."
+
+#: Controls.py:62
+msgid "Firing phasers..."
+msgstr "Les phasers font feu..."
+
+#: Controls.py:75
+msgid "Enemy ship destroyed at [{xpos},{ypos}]."
+msgstr "Vaisseau ennemi détruit aux coordonnées [{xpos},{ypos}]."
+
+#: Controls.py:79
+msgid "Hit ship at [{xpos},{ypos}]."
+msgstr "Vaisseau touché aux coordonnées [{xpos},{ypos}]."
+
+#: Controls.py:80
+msgid "Enemy shield down to {shield_level}."
+msgstr "Le bouclier ennemi est tombé à {shield_level}."
+
+#: Controls.py:90
+msgid "--- Shield Controls ----------------"
+msgstr "--- Contrôle des boucliers --------"
+
+#: Controls.py:91
+msgid "add = Add energy to shields."
+msgstr "add = Ajouter de l’énergie aux boucliers."
+
+#: Controls.py:92
+msgid "sub = Subtract energy from shields."
+msgstr "sub = Retirer de l’énergie aux boucliers."
+
+#: Controls.py:94
+msgid "Enter shield control command: "
+msgstr "Saisir la commande du bouclier: "
+
+#: Controls.py:103
+msgid "Invalid command."
+msgstr "Commande invalide."
+
+#: Controls.py:107
+msgid "Enter amount of energy (1--{0}): "
+msgstr "Saisir la quantité d’énergie (1--{0}): "
+
+#: Controls.py:109
+msgid "Invalid amount of energy."
+msgstr "Quantité d'énergie invalide."
+
+#: Controls.py:119
+msgid "Shield strength is now {0}. Energy level is now {1}."
+msgstr ""
+"La niveau du bouclier est maintenant {0}. Le niveau d’énergie générale est "
+"maintenant {1}."
+
+#: Controls.py:130
+msgid "Photon torpedoes exhausted."
+msgstr "Torpilles à photons épuisées."
+
+#: Controls.py:139
+msgid "Invalid shot."
+msgstr "Tir invalide."
+
+#: Controls.py:143
+msgid "Photon torpedo fired..."
+msgstr "Torpille à photon lancée.."
+
+#: Controls.py:152
+msgid "Klingon ship #{} destroyed."
+msgstr "Vaisseau Klingon N°{} détruit."
+
+#: Controls.py:160
+msgid "Federation Starbase #{} destroyed!"
+msgstr "Base stellaire de la Fédération N°{} détruite !"
+
+#: Controls.py:167
+msgid "Torpedo vaporizes star #{num}!"
+msgstr "La torpille a vaporisé l'étoile N°{num} !"
+
+#: Controls.py:173
+msgid "Torpedo missed."
+msgstr "La torpille a manqué sa cible."
+
+#: Quips.py:9
+msgid "The main "
+msgstr "Le premier "
+
+#: Quips.py:10
+msgid "That @#$#@& "
+msgstr "Ce @#$#@& "
+
+#: Quips.py:11
+msgid "Our cheap "
+msgstr "Notre bon marché "
+
+#: Quips.py:12
+msgid "Darn-it captain, that "
+msgstr "Bon sang Capitaine, que "
+
+#: Quips.py:13
+msgid "Yikes, the "
+msgstr "Aïe, le "
+
+#: Quips.py:16
+msgid " has died. We're on it!"
+msgstr "est mort, on est dessus !"
+
+#: Quips.py:17
+msgid " is out. We're working on it!"
+msgstr " est foutu. On travaille dessus !"
+
+#: Quips.py:18
+msgid " is almost repaired!"
+msgstr "est presque réparé !"
+
+#: Quips.py:19
+msgid " is dead."
+msgstr "est mort."
+
+#: Quips.py:20
+msgid " is fried. Working as fast as we can!"
+msgstr "est cuit. On y travaille aussi vite que l'on peut !"
+
+#: Quips.py:21
+msgid " is toast. Working as fast as I can!"
+msgstr "est grillé. J'y travaille au plus vite !"
+
+#: Quips.py:22
+msgid " is being replaced."
+msgstr "a été remplacé."
+
+#: Quips.py:23
+msgid " is dead. Please leave a message."
+msgstr "est mort. Laissez un message s'il vous plaît."
+
+#: Quips.py:26
+msgid "A defeated "
+msgstr "Un vaincu "
+
+#: Quips.py:27
+msgid "The vengeful "
+msgstr "Le vengeur "
+
+#: Quips.py:28
+msgid "An angry "
+msgstr "Un colérique "
+
+#: Quips.py:29
+msgid "The ejecting "
+msgstr "L'éjecté "
+
+#: Quips.py:30
+msgid "A confused "
+msgstr "Un confus  "
+
+#: Quips.py:31
+msgid "Another "
+msgstr "Un autre "
+
+#: Quips.py:32
+msgid "Yet another "
+msgstr "Encore un autre "
+
+#: Quips.py:35
+msgid " says: `I'll be back!`"
+msgstr "dit: `Je reviendrais !`"
+
+#: Quips.py:36
+msgid " cries: ... 'a lucky shot!'"
+msgstr "crie: … `tir de chanceux !`"
+
+#: Quips.py:37
+msgid " sighs bitterly."
+msgstr "soupire amèrement."
+
+#: Quips.py:38
+msgid " dies."
+msgstr "Meurt."
+
+#: Quips.py:39
+msgid " is rescued."
+msgstr "est secouru."
+
+#: Quips.py:40
+msgid " is history."
+msgstr "appartient à l'histoire."
+
+#: Quips.py:41
+msgid " is no more."
+msgstr "n'est plus."
+
+#: Quips.py:42
+msgid " is recycled."
+msgstr "est recyclé."
+
+#: Quips.py:43
+msgid " is eliminated."
+msgstr "est éliminé."
+
+#: Quips.py:44
+msgid " was aborted. Few lives, matter?"
+msgstr "a été annulé. Quelques vies, quelle importance ?"
+
+#: Quips.py:45
+msgid " ejects."
+msgstr "éjection."
+
+#: Quips.py:46
+msgid " crew is rescued."
+msgstr "l’équipage est secouru."
+
+#: Quips.py:47
+msgid " crew is spaced."
+msgstr "l'équipage est largué dans l'espace."
+
+#: Quips.py:48
+msgid " crew is recycled."
+msgstr "l'équipage ets recyclé."
+
+#: Quips.py:49
+msgid " crew is recovered."
+msgstr "l'équipage est retrouvé."
+
+#: Quips.py:50
+msgid " yells: 'thy mother mates poorly!'"
+msgstr "crie : `Ta mère s’accouple mal !`"
+
+#: Quips.py:51
+msgid " snarls: 'lucky shot.'"
+msgstr "grogne: `Tir de chanceux !`"
+
+#: Quips.py:52
+msgid " laughs: 'you'll not do THAT again!'"
+msgstr "rigole: `Tu ne devrais pas faire CA de nouveau !`"
+
+#: Quips.py:53
+msgid " says nothing."
+msgstr "ne dit rien."
+
+#: Quips.py:54
+msgid " screams: 'thy father is a Targ!'"
+msgstr "crie : `ton père est un Targ !`"
+
+#: Quips.py:55
+msgid " yells: 'thine family eats bats!'"
+msgstr "Crie : `Ta famille bouffe des chauves-souris !`"
+
+#: Quips.py:56
+msgid " snarls: 'thine people eat vermin!'"
+msgstr "grogne : `Ta famille mange de la vermine !`"
+
+#: Quips.py:57
+msgid " curses: 'thy fathers spreadeth pox!'"
+msgstr "malédictions : `tes pères répandent la variole !`"
+
+#: Quips.py:58
+msgid " yells: 'thy mother is progressive!'"
+msgstr "crie : `Ah, mais ta mère progresse !`"
+
+#: Quips.py:61
+msgid "... the crew was not impressed ..."
+msgstr "... l'équipage n'est pas impressionné ..."
+
+#: Quips.py:62
+msgid "... that's going to leave a mark ..."
+msgstr "... qui va laisser une marque ..."
+
+#: Quips.py:63
+msgid "... next time carry the 1?"
+msgstr "... la prochaine fois porte le 1 ?"
+
+#: Quips.py:64
+msgid "... math lives matter ..."
+msgstr "... les maths c'est la vie ..."
+
+#: Quips.py:65
+msgid "... its coming out of your pay ..."
+msgstr "... c’est sur ta  paie ..."
+
+#: Quips.py:66
+msgid "... this is not a bumper car ..."
+msgstr "... c'est pas une auto-tamponneuse ..."
+
+#: Quips.py:67
+msgid "... life can be tough that way ..."
+msgstr "... la vie peut être dure de cette façon ..."
+
+#: Quips.py:68
+msgid "... who ordered THAT take-out?"
+msgstr "... qui a commandé CE plat à emporter ?"
+
+#: Quips.py:69
+msgid "... random is, what random does ..."
+msgstr "... aléatoire est, ce que le hasard fait ..."
+
+#: Quips.py:70
+msgid "... you've got their attention ..."
+msgstr "... vous avez leur attention ..."
+
+#: Quips.py:71
+msgid "... next time, just text them?"
+msgstr "... la prochaine fois, juste leur envoyer un SMS ?"
+
+#: Quips.py:72
+msgid "... how rude!"
+msgstr "... comme c’est grossier !"
+
+#: Quips.py:73
+msgid "... yes, karma CAN hurt ..."
+msgstr "... oui, le karma PEUT faire mal ..."
+
+#: Quips.py:74
+msgid "... life is but a dream!"
+msgstr "... la vie n’est qu’un rêve !"
+
+#: Quips.py:75
+msgid "... game over."
+msgstr "... perdu !"
+
+#: Quips.py:76
+msgid "... starfleet will talk about this for years."
+msgstr "... Starfleet en parlera pendant des années."
+
+#: Quips.py:77
+msgid "... who is going to pay for that?"
+msgstr "... qui va payer pour ça ?"
+
+#: Quips.py:78
+msgid "... galactic insurance premiums skyrocket ..."
+msgstr "... les primes d’assurance galactiques montent en flèche ..."
+
+#: Quips.py:79
+msgid "... captain goes down with the starship ..."
+msgstr "... le capitaine coule avec son vaisseau ..."
+
+#: Quips.py:80
+msgid "... we'll notify your next-of-kin."
+msgstr "... nous informerons votre plus proche parent."
+
+#: Quips.py:81
+msgid "... that was not in the script ..."
+msgstr "... ce n'est pas dans le script ..."
+
+#: Quips.py:82
+msgid "... you never did THAT in the simulator ..."
+msgstr "... je n'ai jamais fait CA en simulation ..."
+
+#: Quips.py:86
+msgid "-Let's call it a draw?"
+msgstr "- Disons qu'on est à égalité ?"
+
+#: Quips.py:87
+msgid "-You call yourself a 'Trekkie?"
+msgstr "- Vous vous appelez un « Trekkie » ?"
+
+#: Quips.py:88
+msgid "Kobayashi Maru. Python for you?"
+msgstr "Kobayashi Maru. Python pour vous ?"
+
+#: Quips.py:89
+msgid "(Spock shakes his head)"
+msgstr "(Spock secoue la tête)"
+
+#: Quips.py:90
+msgid "(Duras, stop laughing!)"
+msgstr "(Duras, arrête de rire !)"
+
+#: Quips.py:91
+msgid "(... and the Klingons rejoice)"
+msgstr "(... et les Klingons se réjouissent)"
+
+#: Quips.py:92
+msgid "(... and our enemies, rejoice)"
+msgstr "(... et nos ennemis se réjouissent)"
+
+#: Quips.py:93
+msgid "Kobayashi Maru... Got Python?"
+msgstr "Kobayashi Maru... vous avez Python ?"
+
+#: Quips.py:94
+msgid "(Kirk shakes his head)"
+msgstr "(Kirk secoue sa tête)"
+
+#: Reports.py:16
+msgid "               Time Remaining: {time_remaining}"
+msgstr "               Temps restant: {time_remaining}"
+
+#: Reports.py:17
+msgid "      Klingon Ships Remaining: {game_klingons}"
+msgstr "      Vaisseaux Klingon restants: {game_klingons}"
+
+#: Reports.py:18
+msgid "                    Starbases: {game_starbases}"
+msgstr "                    Bases stellaires: {game_starbases}"
+
+#: Reports.py:19
+msgid "           Warp Engine Damage: {navigation_damage}"
+msgstr "           Dommages au moteur de distorsion: {navigation_damage}"
+
+#: Reports.py:20
+msgid "   Short Range Scanner Damage: {short_range_scan_damage}"
+msgstr "   Dommages au scanner courte portée: {short_range_scan_damage}"
+
+#: Reports.py:21
+msgid "    Long Range Scanner Damage: {long_range_scan_damage}"
+msgstr "    Dommages au scanner longue portée: {long_range_scan_damage}"
+
+#: Reports.py:22
+msgid "       Shield Controls Damage: {shield_control_damage}"
+msgstr "       Dommages au contrôle du bouclier: {shield_control_damage}"
+
+#: Reports.py:23
+msgid "         Main Computer Damage: {computer_damage}"
+msgstr "         Dommages à l'ordinateur principal: {computer_damage}"
+
+#: Reports.py:24
+msgid "Photon Torpedo Control Damage: {photon_damage}"
+msgstr "Dommages au contrôle des torpilles à photon: {photon_damage}"
+
+#: Reports.py:25
+msgid "                Phaser Damage: {phaser_damage}"
+msgstr "                Dommages aux phasers: {phaser_damage}"
+
+#: Reports.py:31
+msgid "| KLINGONS: {gklingons:>04} | "
+msgstr "| KLINGONS: {gklingons:>04} | "
+
+#: Reports.py:32
+msgid "STARBASES: {gstarbases:>04} | "
+msgstr "BASES STELLAIRES: {gstarbases:>04} | "
+
+#: Reports.py:33
+msgid "STARS: {gstars:>04} |"
+msgstr "ETOILES: {gstars:>04} |"
+
+#: Reports.py:43
+msgid "MISSION FAILED: SHIP DESTROYED"
+msgstr "MISSION ÉCHOUÉE : NAVIRE DÉTRUIT"
+
+#: Reports.py:46
+msgid "MISSION FAILED: OUT OF ENERGY."
+msgstr "MISSION ÉCHOUÉE : A COURS D'ENERGIE."
+
+#: Reports.py:49
+msgid "ENEMIES DESTROYED"
+msgstr "ENEMIES DÉTRUITS"
+
+#: Reports.py:49
+msgid "MISSION ACCOMPLISHED"
+msgstr "MISSION ACCOMPLIE"
+
+#: Reports.py:49
+msgid "WELL DONE!"
+msgstr "BRAVO !"
+
+#: Reports.py:52
+msgid "MISSION FAILED: OUT OF TIME."
+msgstr "MISSION ECHOUÉE: À COURS DE TEMPS."
+
+#: Reports.py:55
+msgid "::::::::: MISSION ABORTED :::::::::"
+msgstr ":::::::::: MISSION ANNULÉE ::::::::::::"
+
+#: Sector.py:38 ShipEnterprise.py:20
+msgid "GREEN"
+msgstr "VERT"
+
+#: Sector.py:40
+msgid "RED"
+msgstr "ROUGE"
+
+#: Sector.py:42 Sector.py:72
+msgid "YELLOW"
+msgstr "JAUNE"
+
+#: Sector.py:47
+msgid "             Number: [{number}]\n"
+msgstr "             Nombre: [{number}]\n"
+
+#: Sector.py:48
+msgid "           Hazzards: [{hazzards}]\n"
+msgstr "           Hazzards: [{hazzards}]\\n\n"
+
+#: Sector.py:49
+msgid "           Stardate: {star_date}\n"
+msgstr "           Date stellaire: {star_date}\n"
+
+#: Sector.py:50
+msgid "          Condition: {condition}\n"
+msgstr "          Condition: {condition}\\n\n"
+
+#: Sector.py:51
+msgid "             Energy: {energy}\n"
+msgstr "             Energie: {energy}\n"
+
+#: Sector.py:52
+msgid "            Shields: {shield_level}\n"
+msgstr "            Boucliers: {shield_level}\n"
+
+#: Sector.py:53
+msgid "   Photon Torpedoes: {photon_torpedoes}\n"
+msgstr "   Torpiles à photon: {photon_torpedoes}\n"
+
+#: Sector.py:54
+msgid "     Time remaining: {time_remaining}\n"
+msgstr "     Temps restant: {time_remaining}\n"
+
+#: Sector.py:60
+msgid "    -=--=--=--=--=--=--=--=-             Docked: {docked}\n"
+msgstr "    -=--=--=--=--=--=--=--=-             Amarré: {docked}\n"
+
+#: Sector.py:66
+msgid "Condition RED: Klingon ship{0} detected."
+msgstr "Condition ROUGE: Vaisseau(x) Klingon détecté(s)."
+
+#: Sector.py:68
+msgid "Warning: Shields are down."
+msgstr "Attention, les boucliers sont coupés."
+
+#: Sector.py:71
+msgid "Condition YELLOW: Low energy level."
+msgstr "Condition JAUNE : Faible niveau d’énergie."
+
+#: ShipEnterprise.py:74
+msgid "Warp engines have been repaired."
+msgstr "Les moteurs de distorsion ont été réparés."
+
+#: ShipEnterprise.py:80
+msgid "Short range scanner has been repaired."
+msgstr "Le scanner à courte portée à été réparé."
+
+#: ShipEnterprise.py:86
+msgid "Long range scanner has been repaired."
+msgstr "Le scanner à longue portée à été réparé."
+
+#: ShipEnterprise.py:92
+msgid "Shield controls have been repaired."
+msgstr "Le contrôle de bouclier à été réparé."
+
+#: ShipEnterprise.py:98
+msgid "The main computer has been repaired."
+msgstr "L'ordinateur principal a été réparé."
+
+#: ShipEnterprise.py:104
+msgid "Photon torpedo controls have been repaired."
+msgstr "Le contrôle des torpilles à photon a été réparé."
+
+#: ShipEnterprise.py:110
+msgid "Phasers have been repaired."
+msgstr "Les phasers ont été réparés."
+
+#: ShipEnterprise.py:146
+msgid "     |          LONG RANGE SCAN          |"
+msgstr "     |          SCAN LONGUE DIST          |"
+
+#: ShipKlingon.py:37
+msgid ""
+"Enterprise hit by ship at sector [{0},{1}]. No damage due to starbase "
+"shields."
+msgstr ""
+"L'Entreprise touchée par le vaisseau au secteur [{0},{1}]. Aucun dommage dû "
+"aux boucliers de la base stellaire."
+
+#: ShipKlingon.py:49
+msgid "Enterprise hit by ship at sector [{0},{1}]. Shields dropped to {2}."
+msgstr ""
+"L'Entreprise touchée par un navire dans le secteur [{0},{1}]. Boucliers "
+"tombés à {2}."
+
+#: StarTrek2020.py:96
+msgid "You flew into a KLINGON!"
+msgstr "Vous avez percuté un KLINGON !"
+
+#: StarTrek2020.py:98
+msgid "You flew into a STARBASE?"
+msgstr "Vous avez percuté une base stellaire !"
+
+#: StarTrek2020.py:100
+msgid "You flew into a STAR?"
+msgstr "Vous avez percuté une étoile !"
+
+#: StarTrek2020.py:111
+msgid "Enter command: "
+msgstr "Saisir une commande:"
+
+#: StarTrek2020.py:136
+msgid "Mission: Destroy {0} Klingon ships in {1} stardates with {2} starbases."
+msgstr ""
+"Mission : Détruire {0} vaisseaux klingons en {1} dates stellaires avec {2} "
+"bases stellaires."
+
+#: TrekStrings.py:105
+msgid "--- Commands -----------------"
+msgstr "--- Commandes -----------------"
+
+#: TrekStrings.py:106
+msgid "nav = Warp Speed      srs = Short Range Scan  tor = Photon Torpedos"
+msgstr ""
+"nav = Vitesse de distorsion      srs = Scanner à courte distance  tor = "
+"Torpilles à photon"
+
+#: TrekStrings.py:107
+msgid "sub = Sublight Speed  lrs = Long Range Scan   pha = Phasers"
+msgstr ""
+"sub = Vitesse conventionnelle  lrs = Scanner à longue distance   pha = "
+"Phasers"
+
+#: TrekStrings.py:108
+msgid "qui = Quit            com = Access Computer   she = Shields"
+msgstr "qui = Quitter            com = Ordinateur de bord   she = Boucliers"
+
+#: TrekStrings.py:112
+msgid "--- Main Computer --------------"
+msgstr "--- Ordinateur principal --------------"
+
+#: TrekStrings.py:113
+msgid "rec = Cumulative Galatic Record"
+msgstr "rec = Enregistrements galactiques successifs"
+
+#: TrekStrings.py:114
+msgid "sta = Status Report"
+msgstr "sta = Rapport d'étape"
+
+#: TrekStrings.py:115
+msgid "tor = Photon Torpedo Targets"
+msgstr "tor = Cibles des torpilles à photon"
+
+#: TrekStrings.py:116
+msgid "bas = Starbase Locations"
+msgstr "bas = Emplacements des bases stellaires"

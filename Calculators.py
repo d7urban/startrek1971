@@ -6,6 +6,11 @@ from AbsShip import *
 from Points import *
 from Difficulity import Probabilities
 
+import gettext
+
+# _ = gettext.gettext
+
+
 class Calc():
 
     @staticmethod
@@ -41,7 +46,7 @@ class Calc():
     def sublight_navigation(game):
         dest_sys = game.read_xypos()
         if not dest_sys:
-            game.display("Invalid course.")
+            game.display(_("Invalid course."))
             game.display()
             return
 
@@ -50,12 +55,12 @@ class Calc():
                              dest_sys.xpos, dest_sys.ypos)
         energy_required = int(dist)
         if energy_required >= game.enterprise.energy:
-            game.display("Insufficient energy move to that location.")
+            game.display(_("Insufficient energy move to that location."))
             game.display()
             return
 
         game.display()
-        game.display("Sub-light engines engaged.")
+        game.display(_("Sub-light engines engaged."))
         game.enterprise.energy -= energy_required
         game.display()
         game.move_to(dest_sys)
@@ -66,8 +71,8 @@ class Calc():
         game.enterprise.short_range_scan(game)
 
         if game.enterprise.docked:
-            game.display("Lowering shields as part of docking sequence...")
-            game.display("Enterprise successfully docked with starbase.")
+            game.display(_("Lowering shields as part of docking sequence..."))
+            game.display(_("Enterprise successfully docked with starbase."))
             game.display()
         else:
             if game.game_map.count_area_klingons() > 0:
@@ -80,12 +85,12 @@ class Calc():
     def warp_navigation(game):
         if game.enterprise.navigation_damage > 0:
             max_warp_factor = 0.2 + random.randint(0, 8) / 10.0
-            game.display(f"Warp engines damaged. Maximum warp factor: {max_warp_factor}")
+            game.display(_("Warp engines damaged. Maximum warp factor: {max}").format(max=max_warp_factor))
             game.display()
 
         dest_sys = game.read_sector()
         if not dest_sys:
-            game.display("Invalid course.")
+            game.display(_("Invalid course."))
             game.display()
             return
 
@@ -97,11 +102,11 @@ class Calc():
         dist = dest_sys.warp * 8
         energy_required = int(dist)
         if energy_required >= game.enterprise.energy:
-            game.display("Insufficient energy to travel at that speed.")
+            game.display(_("Insufficient energy to travel at that speed."))
             game.display()
             return
         else:
-            game.display("Warp engines engaged.")
+            game.display(_("Warp engines engaged."))
             game.display()
             game.enterprise.energy -= energy_required
 
@@ -113,8 +118,8 @@ class Calc():
         game.enterprise.short_range_scan(game)
 
         if game.enterprise.docked:
-            game.display("Lowering shields as part of docking sequence...")
-            game.display("Enterprise successfully docked with starbase.")
+            game.display(_("Lowering shields as part of docking sequence..."))
+            game.display(_("Enterprise successfully docked with starbase."))
             game.display()
         else:
             if game.game_map.count_area_klingons() > 0:
@@ -130,12 +135,12 @@ class Calc():
         bases = game.game_map.get_all(Glyphs.STARBASE)
         game.display()
         if bases:
-            game.display("Starbases:")
+            game.display(_("Starbases:"))
             for info in bases:
                 area = info[0]; base = info[1]
-                game.display(f"\tSector #{area.number} at [{base.xpos},{base.ypos}].")
+                game.display(_("\tSector #{number} at [{xpos},{ypos}].").format(number=area.number, xpos=base.xpos, ypos=base.ypos))
         else:
-            game.display("There are no Starbases.")
+            game.display(_("There are no Starbases."))
         game.display()
 
 
@@ -144,11 +149,11 @@ class Calc():
         game.display()
         kships = game.game_map.get_area_klingons()
         if len(kships) == 0:
-            game.display("There are no enemies in this sector.")
+            game.display(_("There are no enemies in this sector."))
             return
 
-        game.display("Enemies:")
+        game.display(_("Enemies:"))
         for ship in kships:
-            game.display(f"\tKlingon [{ship.xpos},{ship.ypos}].")
+            game.display(_("\tKlingon [{xpos},{ypos}].").format(xpos=ship.xpos, ypos=ship.ypos))
         game.display()
 

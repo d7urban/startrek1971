@@ -12,6 +12,10 @@ from Points import *
 from Quips import Quips
 from MapGame import *
 
+import gettext
+
+# _ = gettext.gettext
+
 
 class Game(Con):
 
@@ -62,6 +66,10 @@ class Game(Con):
         '''
         The game loop - runs until the game is over.
         '''
+
+        fr = gettext.translation('startrek2020', localedir='locale', languages=['fr'])
+        fr.install()
+
         self.show_strings(TrekStrings.LOGO_TREKER)
         game.star_date = random.randint(2250, 2300)
         game.time_remaining = random.randint(40, 45)
@@ -89,11 +97,11 @@ class Game(Con):
                     
         except ErrorEnterpriseCollision as ex:
             if ex.glyph == Glyphs.KLINGON:
-                self.display("You flew into a KLINGON!")
+                self.display(_("You flew into a KLINGON!"))
             if ex.glyph == Glyphs.STARBASE:
-                self.display("You flew into a STARBASE?")
+                self.display(_("You flew into a STARBASE?"))
             if ex.glyph == Glyphs.STAR:
-                self.display("You flew into a STAR?")
+                self.display(_("You flew into a STAR?"))
             self.destroyed = True
         game.display()
         Stats.show_exit_status(game)
@@ -104,7 +112,7 @@ class Game(Con):
         return False
 
     def command_prompt(self):
-        command = self.read("Enter command: ").strip().lower()
+        command = self.read(_("Enter command: ")).strip().lower()
         self.display()
         if command == "nav":
             Calc.warp_navigation(game)
@@ -129,7 +137,7 @@ class Game(Con):
         return True
 
     def print_mission(self):
-        self.display("Mission: Destroy {0} Klingon ships in {1} stardates with {2} starbases.".format(
+        self.display(_("Mission: Destroy {0} Klingon ships in {1} stardates with {2} starbases.").format(
             self.game_map.game_klingons, self.time_remaining, self.game_map.game_starbases))
         self.display()
 

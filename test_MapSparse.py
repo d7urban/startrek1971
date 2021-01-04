@@ -3,6 +3,7 @@ import MapGame
 import Glyphs
 from MapSparse import SparseMap
 
+
 def fill_map():
     map = SparseMap()
     map.init()
@@ -11,6 +12,7 @@ def fill_map():
             for ypos in range(8):
                 assert(map.plot(sector,xpos,ypos,Glyphs.ENTERPRISE))
     return map
+
 
 def define_map():
     map = SparseMap()
@@ -33,6 +35,7 @@ def define_map():
                      random.randint(0, 7),
                      glyph)
     return map
+
 
 if __name__ == '__main__':
     map = fill_map()

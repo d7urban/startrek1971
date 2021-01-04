@@ -1,6 +1,11 @@
 from AbsDisplay import abs_display
 from Points import *
 
+import gettext
+
+# _ = gettext.gettext
+
+
 class Con(abs_display):
     '''
     The best place to start is by encapsulating the default
@@ -24,7 +29,7 @@ class Con(abs_display):
             pass
         return False
 
-    def read_xypos(self, prompt = "Location (alpha,num)"):
+    def read_xypos(self, prompt = _("Location (alpha,num)")):
         '''
         Parse: [a-h], ypos 
                 or 
@@ -35,17 +40,17 @@ class Con(abs_display):
         text = input(prompt + ': ')
         return SubDest.parse(text)
 
-    def read_sector(self, prompt= "Helm: sector 1-64, speed 1.0-9.0?"):
+    def read_sector(self, prompt= _("Helm: sector 1-64, speed 1.0-9.0?")):
         text = input(prompt + ': ')
         return WarpDest.parse(text)
 
-    def read_xypos(self, prompt= "Helm: a-h, 1-8?"):
+    def read_xypos(self, prompt= _("Helm: a-h, 1-8?")):
         text = input(prompt + ': ')
         return SubDest.parse(text)
 
 
 if __name__ == '__main__':
     con = Con()
-    con.display("Testing!")
-    con.show_banner(["Testing, too!"])
-    con.show_banner(["Testing", " .......... too!"])
+    con.display(_("Testing!"))
+    con.show_banner([_("Testing, too!")])
+    con.show_banner([_("Testing"), _(" .......... too!")])
