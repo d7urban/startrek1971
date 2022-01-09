@@ -74,12 +74,11 @@ class Calc():
             game.display(_("Lowering shields as part of docking sequence..."))
             game.display(_("Enterprise successfully docked with starbase."))
             game.display()
-        else:
-            if game.game_map.count_area_klingons() > 0:
-                ShipKlingon.attack_if_you_can(game)
-                game.display()
-            elif not game.enterprise.repair(game):
-                game.enterprise.damage(game, Probabilities.LRS)
+        elif game.game_map.count_area_klingons() > 0:
+            ShipKlingon.attack_if_you_can(game)
+            game.display()
+        elif not game.enterprise.repair(game):
+            game.enterprise.damage(game, Probabilities.LRS)
 
     @staticmethod
     def warp_navigation(game):
@@ -96,9 +95,7 @@ class Calc():
 
         game.display()
 
-        if dest_sys.warp < 1:
-            dest_sys.warp = 1
-
+        dest_sys.warp = max(dest_sys.warp, 1)
         dist = dest_sys.warp * 8
         energy_required = int(dist)
         if energy_required >= game.enterprise.energy:
@@ -121,12 +118,11 @@ class Calc():
             game.display(_("Lowering shields as part of docking sequence..."))
             game.display(_("Enterprise successfully docked with starbase."))
             game.display()
-        else:
-            if game.game_map.count_area_klingons() > 0:
-                ShipKlingon.attack_if_you_can(game)
-                game.display()
-            elif not game.enterprise.repair(game):
-                game.enterprise.damage(game, Probabilities.RANDOM)
+        elif game.game_map.count_area_klingons() > 0:
+            ShipKlingon.attack_if_you_can(game)
+            game.display()
+        elif not game.enterprise.repair(game):
+            game.enterprise.damage(game, Probabilities.RANDOM)
 
 
     @staticmethod

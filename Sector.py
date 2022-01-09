@@ -33,7 +33,7 @@ class Sector():
                         map)
 
 
-    @staticmethod                
+    @staticmethod
     def display_area(game, sector):
         game.enterprise.condition = _("GREEN")
         if sector.area_klingons > 0:
@@ -43,8 +43,7 @@ class Sector():
 
         sb =  "     a  b  c  d  e  f  g  h \n"
         sb += _("    -=--=--=--=--=--=--=--=-             Sector: ") + sector.name + "\n"
-        info = list()
-        info.append(_("             Number: [{number}]\n").format(number=sector.number))
+        info = [_("             Number: [{number}]\n").format(number=sector.number)]
         info.append(_("           Hazzards: [{hazzards}]\n").format(hazzards=sector.area_stars + sector.area_klingons))
         info.append(_("           Stardate: {star_date}\n").format(star_date=game.star_date))
         info.append(_("          Condition: {condition}\n").format(condition=game.enterprise.condition))

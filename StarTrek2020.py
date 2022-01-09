@@ -49,7 +49,7 @@ class Game(Con):
                         p.ypos == point[1]:
                             self.enterprise.docked = True
                             ShipStarbase.dock_enterprise(self.enterprise)
-        if was_docked and self.enterprise.docked == False:
+        if was_docked and not self.enterprise.docked:
             ShipStarbase.launch_enterprise(self.enterprise)
         return pos
 
@@ -57,10 +57,9 @@ class Game(Con):
         '''
         See if the game is still running.
         '''
-        running = self.enterprise.energy > 0 and not \
+        return self.enterprise.energy > 0 and not \
         self.destroyed and self.game_map.game_klingons > 0 and \
         self.time_remaining > 0
-        return running
 
     def run(self):
         '''
@@ -94,7 +93,7 @@ class Game(Con):
                     ShipStarbase.dock_enterprise(self.enterprise)
                     ShipStarbase.launch_enterprise(self.enterprise)
                     self.enterprise.shield_level = 1000
-                    
+
         except ErrorEnterpriseCollision as ex:
             if ex.glyph == Glyphs.KLINGON:
                 self.display(_("You flew into a KLINGON!"))
@@ -106,7 +105,7 @@ class Game(Con):
         game.display()
         Stats.show_exit_status(game)
         game.display()
-        if self.destroyed == True:
+        if self.destroyed:
             self.display(Quips.jibe_fatal_mistake())
         game.display()
         return False

@@ -61,7 +61,7 @@ class Control():
         game.display()
         game.display(_("Firing phasers..."))
         destroyed_ships = []
-        for ss, ship in enumerate(kships):
+        for ship in kships:
             game.enterprise.energy -= int(phaser_energy)
             if game.enterprise.energy < 0:
                 game.enterprise.energy = 0
