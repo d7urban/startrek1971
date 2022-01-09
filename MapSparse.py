@@ -58,7 +58,7 @@ class SparseMap:
 
         def remove(self, xpos, ypos):
             ''' Remove an item from the Area. '''
-            for ss, obj in enumerate(self._pieces):
+            for obj in self._pieces:
                 if obj.xpos == xpos and obj.ypos == ypos:
                     self._pieces.remove(obj)
                     return
@@ -82,10 +82,7 @@ class SparseMap:
 
         def range_ok(self, xpos, ypos):
             ''' Verify that coordinates are plottable. '''
-            if xpos < 0 or ypos < 0 or \
-                xpos > 7 or ypos > 7:
-                return False
-            return True
+            return xpos >= 0 and ypos >= 0 and xpos <= 7 and ypos <= 7
 
         def query(self, glyph):
             '''
@@ -93,21 +90,13 @@ class SparseMap:
             collection. Changes to the results WILL NOT 
             affect the glyph in the AREA.
             '''
-            results = []
-            for p in self._pieces:
-                if p.glyph == glyph:
-                    results.append(SparseMap.Area.clone(p))
-            return results
+            return [SparseMap.Area.clone(p) for p in self._pieces if p.glyph == glyph]
 
         def count_glyphs(self, glyph):
             '''
             Tally the number of glyphs that we have in the Area.
             '''
-            count = 0
-            for p in self._pieces:
-                if p.glyph == glyph:
-                    count += 1
-            return count
+            return sum(p.glyph == glyph for p in self._pieces)
 
         def plot_glyph(self, xpos, ypos, glyph):
             ''' 
@@ -175,17 +164,14 @@ class SparseMap:
             return False
         which -= 1 # ASSURED
         fid = which / 8
-        ypos = 0
         xpos = int(fid)
-        if not fid.is_integer():
-            ypos = which %8
+        ypos = which %8 if not fid.is_integer() else 0
         return self._map[xpos][ypos][1]
 
     def data(self):
         ''' Enumerate thru every [Region, Area] in the Map '''
         for row in self._map:
-            for col in row:
-                yield col
+            yield from row
 
     def areas(self):
         ''' Enumerare thru every Area on the Map '''

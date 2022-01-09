@@ -17,8 +17,8 @@ def fill_map():
 def define_map():
     map = SparseMap()
     map.init()
-    for ypos, area in enumerate(range(8)):
-        for xpos, area in enumerate(range(8)):
+    for area in range(8):
+        for area in range(8):
             which = random.randint(0, 14)
             glyph = Glyphs.SPACE
             if which < 0:

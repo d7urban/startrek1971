@@ -20,8 +20,8 @@ class Probabilities:
         The HIGHER the level, the MORE difficult 
         the game will be. 0 = EASY, 6 = HIGHEST
         '''
-        if level < 0: level = 0
-        if level > 6: level = 6
+        level = max(level, 0)
+        level = min(level, 6)
         Probabilities._LEVEL = level
 
     @staticmethod

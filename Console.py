@@ -23,8 +23,7 @@ class Con(abs_display):
     def read_double(self, prompt):
         text = input(prompt)
         try:
-            value = float(text)
-            return value
+            return float(text)
         except:
             pass
         return False
